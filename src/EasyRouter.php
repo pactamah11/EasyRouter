@@ -432,8 +432,8 @@ class main
 						/**
 						 * Check options.
 						 */
-						if (isset($exception["options"]) && !is_null($exception["options"])) {
-							if (isset($exception["revertOptions"]) && !is_null($exception["revertOptions"])) {
+						if (isset($exception["options"])) {
+							if (isset($exception["revertOptions"])) {
 								if ($exception["revertOptions"] === true) {
 									$routeParamOriginal = $route_i;
 								}
@@ -490,7 +490,7 @@ class main
 								}
 							}
 
-							if (isset($exception["revertOptions"]) && !is_null($exception["revertOptions"])) {
+							if (isset($exception["revertOptions"])) {
 								if ($exception["revertOptions"] === true) {
 									$route_i = $routeParamOriginal;
 								}
